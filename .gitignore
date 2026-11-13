@@ -1,8 +1,9 @@
-﻿.venv/
+.venv/
 __pycache__/
 *.egg-info/
 .env
 data/
 mlruns/
+*.db
 lora_code_reviewer/
 .pytest_cache/
