@@ -1,0 +1,8 @@
+﻿.venv/
+__pycache__/
+*.egg-info/
+.env
+data/
+mlruns/
+lora_code_reviewer/
+.pytest_cache/

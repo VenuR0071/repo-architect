@@ -1,0 +1,41 @@
+﻿[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "repo-architect"
+version = "0.1.0"
+description = "Production AST-aware RAG & Fine-tuned Codebase Assistant"
+requires-python = ">=3.11"
+dependencies = [
+    "typer>=0.12.5",
+    "rich>=13.8.0",
+    "pydantic>=2.9.0",
+    "pydantic-settings>=2.5.0",
+    "tree-sitter>=0.23.0",
+    "tree-sitter-python>=0.23.0",
+    "tree-sitter-java>=0.23.0",
+    "tree-sitter-javascript>=0.23.0",
+    "langchain>=0.3.0",
+    "langchain-core>=0.3.0",
+    "langchain-huggingface>=0.1.0",
+    "langchain-pinecone>=0.2.0",
+    "pinecone>=5.3.0",
+    "sentence-transformers>=3.1.0",
+    "rank-bm25>=0.2.2",
+    "transformers>=4.45.0",
+    "peft>=0.13.0",
+    "accelerate>=0.34.0",
+    "datasets>=3.0.0",
+    "mlflow>=2.16.0",
+    "ragas>=0.1.20",
+    "gitpython>=3.1.43",
+    "tenacity>=9.0.0",
+    "pytest>=8.3.0"
+]
+
+[project.scripts]
+repo-arch = "repo_architect.cli:app"
+
+[tool.setuptools.packages.find]
+where = ["src"]
